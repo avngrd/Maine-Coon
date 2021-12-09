@@ -4,9 +4,435 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS</title>
+  <title>Питомник Мейн-Кунов</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>"Добро пожаловать на курс по веб-разработке"</h1>
-</body>
+<!-- body-->
+
+<header class="main-header">
+  <div class="main-header-wrapper">
+   <!--  <svg class="main-header__wrapper" width="50" height="50">
+        исправить
+    </svg> -->
+    <div class="main-header__content">
+      <p class="main-header__city">Новосибирск</p>
+      <h1>Питомник Мейн-Кунов</h1>
+      <p class="main-header-description">Первый Питомник с расширенным спектром услуг</p>
+      <a class="main-header__main-link main-link" href="#">Смотреть котиков</a>
+      <ul class="main-header__social">
+        <li>
+          <a href="#">Vkontakte
+            <svg width="50" height="50">
+              <!-- vk -->
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">Twitter
+            <svg width="50" height="50">
+              <!-- twitter-->
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="a">Facebook
+            <svg width="50" height="50">
+              <!-- facebook -->
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+  <main>
+    <section class="pets">
+      <div class="pets_wrapper">
+        <h2>Питомцы</h2>
+        <p class="pets__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной </p>
+        <ul class="pets__list">
+          <li>
+            <a class="pets__link pets__link--active" href="#">Коты</a>
+          </li>
+          <li>
+            <a class="pets__link" href="#">Кошки</a>
+          </li>
+          <li>
+            <a class="pets__link" href="#">Котята</a>
+          </li>
+        </ul>
+        <div class="pets__slider pets-slider">
+          <button aria-label="Кнопка на 1 слайд влево">
+            <svg class="pets-slider__arrow" width="30" height="30">
+              <!-- стрелка влево-->
+            </svg>
+          </button>
+          <ul class="pets-slider__list">
+            <li class="pets-slider__item ">
+              <picture>
+                <img class="pets-slider__picture " src="asdad" width="10" height="10" alt="Кот 1 на слайде">
+              </picture>
+            </li>
+            <li class="pets-slider__item ">
+              <picture>
+                <img class="pets-slider__picture " src="asdad" width="10" height="10" alt="Кот 2 на слайде">
+              </picture>
+            </li>
+            <li class="pets-slider__item ">
+              <picture>
+                <img class="pets-slider__picture" src="asdad" width="10" height="10" alt="Кот 3 на слайде">
+              </picture>
+            </li>
+          </ul>
+          <button aria-label="Кнопка на 1 слайд вправо">
+            <svg class="pets-slider__arrow" width="10" height="10">
+              <!-- стрелка вправо-->
+            </svg>
+          </button>     
+        </div>
+        <a class="main-link" href="#">Смотреть больше</a>
+      </div>
+    </section>
+    <section>
+      <div class="features__wrapper">
+        <h2>Особенности породы</h2>
+        <p class="features__description">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное
+          животное, которому нет равных</p>
+        <div class="features__content">
+          <picture>
+            <img class="features__picture" src="asdad" alt="Изображение кота в круге" width="10" height="10">
+          </picture>
+          <ul class="features__list">
+            <li class="features__item ">Легко уживается в семьях с детьми или другими животными</li>
+            <li class="features__item ">Выполняет команды как дрессированная собака</li>
+            <li class="features__item ">Вес может достигать 12кг, а длина 1 м</li>
+            <li class="features__item ">Внешний вид этой кошки похож на дикую рысь</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="benefits__wrapper">
+        <h2>Почему именно мы?</h2>
+        <p class="benefits__description">Приобретая животное в нашем питомнике, вы получите</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <div class="benefits__content">
+              <svg class="benefits__image" width="10" height="10">
+                <!-- гарантия спрайт !!!разобраться!!!-->
+              </svg>
+              <p>Бесплатное ветеринарное обслуживание 5 лет</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__content">
+              <svg class="benefits__image" width="10" height="10">
+                <!-- консультация спрайт!!!-->
+              </svg>
+              <p>Консультирование по любому вопросу 24 часа в сутки</p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__content">
+              <svg class="benefits__image" width="10" height="10">
+                <!-- подбор питания спрайт!!!-->
+              </svg>
+              <p>Индивидуальный подбор питания для вашего кота</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="care">
+      <div class="care__wrapper">
+        <h2>Об уходе за Мейн-Куном</h2>
+        <ul class="care___list">
+          <li class="care__item care__item--wool">
+            <div class="care__content">
+              <h3>Шерсть</h3>
+              <p>Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
+            </div>
+            <div class="care__button">
+              <svg width="10" height="10">
+                <!-- спрайт стрелка вправо-->
+              </svg>
+            </div>
+          </li>
+          <li class="care__item care__item--eyes">
+            <div class="care__content">
+              <h3>Уши и глаза</h3>
+              <p>Владельцам котов необходимо регулярно осматривать ушки и глаза своих питомцев ведь это может быть признаками заболевания</p>
+            </div>
+            <div class="care__button">
+              <svg width="10" height="10">
+                <!-- спрайт стрелка вправо-->
+              </svg>
+            </div>
+          </li>
+          <li class="care__item care__item--claw">
+            <div class="care__content">
+              <h3>Когти</h3>
+              <p>Нужно ли стричь когти?Это мы и выясним, плюс ко всему расскажем как подобратьь идеальную когтеночку</p>  
+            </div>
+            <div class="care__button">
+              <svg width="10" height="10">
+                <!-- спрайт стрелка вправо-->
+              </svg>
+            </div>
+          </li>
+          <li class="care__item care__item--food">
+            <div class="care__content">
+              <h3>Питание</h3>
+              <p>В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вамы</p>
+            </div>
+            <div class="care__button">
+              <svg width="10" height="10">
+                <!-- спрайт стрелка вправо-->
+              </svg> 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="team">
+      <div class="team__wrapper">
+        <h2>Наша команда</h2>
+        <p class="team__description">Все сотрудники нашего питомника дипломированные специалисты в области фелинологии и ветеринарии</p>
+        <div class="team__item">
+          <div class="team__slider">
+            <button class="team-slider__button" aria-label="Кнопка на 1 слайд влево">
+              <svg class="team-slider__arrow" width="10" height="10">
+                <!-- стрелка влево спрайт-->
+              </svg>
+            </button>
+            <picture>
+              <img class="team-slider__picture" src="asdad" alt="Фото сотрудника компании" width="10" height="10">
+            </picture>
+            <button class="team-slider__button" aria-label="Кнопка на 1 слайд вправо">
+              <svg class="team-slider__arrow" width="10" height="10">
+                <!-- стрелка вправо-->
+              </svg>
+            </button>
+          </div>
+          <div class="team__content">
+            <div class="team__figcaption">
+              <h3>Серёжа Попов</h3>
+              <p>Основатель питомника</p>
+            </div>
+            <p class="team__about">Наш питомник занимается разведением Мейн-Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
+            <ul class="team__social">
+              <li>
+                <a href="#">
+                  <svg class="team__social-icon" width="5" height="12">
+                    <!-- facebook спрайт-->
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="team__social-icon" width="10" height="10">
+                    <!-- спрайт twitter-->
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="team__social-icon" width="10" height="10">
+                    <!-- спрайт vk-->
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq__wrapper">
+        <h2>Вопрос-Ответ</h2>
+        <p class="faq__description">Мы ответим на самые популярные ваши вопросы</p>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <span class="faq__count">01</span>
+            <div class="faq__content">
+              <div class="faq__question">
+                <p class="faq__title">С какого возраста можно заюирать котенка из питомника</p>
+                <div class="faq__items-button">
+                  <svg class="faq__button-minus" width="10" height="10">
+                    <!-- спрайт минус-->
+                  </svg>
+                  <svg class="faq__button-plus" width="10" height="10">
+                    <!-- спрайт плюс-->
+                  </svg>
+                </div>
+            </div>
+              <div class="faq__answer">
+                <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки
+                  животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее
+                  12 недель, максимально защищен от различных вирусов и инфекций.</p>
+                <p>
+                  Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и
+                  воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item">
+            <span class="faq__count">02</span>
+            <div class="faq__content">
+              <div class="faq__question">
+                <p class="faq__title">Как зарезервировать котенка?</p>
+                <div class="faq__items-button">
+                  <svg class="faq__button-minus" width="10" height="10">
+                    <!-- спрайт минус-->
+                  </svg>
+                  <svg class="faq__button-plus" width="10" height="10">
+                    <!-- спрайт плюс-->
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item">
+            <span class="faq__count">03</span>
+            <div class="faq__content">
+              <div class="faq__question">
+                <p class="faq__title">Можно ли купить кота, если я живу в другом городе?</p>
+                <div class="faq__items-button">
+                  <svg class="faq__button-minus" width="10" height="10">
+                    <!-- спрайт минус-->
+                  </svg>
+                  <svg class="faq__button-plus" width="10" height="10">
+                    <!-- спрайт плюс-->
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item">
+            <span class="faq__count">04</span>
+            <div class="faq__content">
+              <div class="faq__question">
+                <p class="faq__title">Как подготовить дом к приему нового питомца?</p>
+                <div class="faq__items-button">
+                  <svg class="faq__button-minus" width="10" height="10">
+                    <!-- спрайт минус-->
+                  </svg>
+                  <svg class="faq__button-plus" width="10" height="10">
+                    <!-- спрайт плюс-->
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>  
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2>Отзывы</h2>
+        <!-- <article class="reviews__item"-->
+          <div class="reviews__slider">
+            <button aria-label="Кнопка на 1 слайд влево">
+              <svg class="reviews__arrow">
+                <!-- спрайт стрелка вправо-->
+              </svg>
+            </button>
+            <picture>
+              <img class="reviews-slider__picture" src="asdad" width="10" height="10" alt="cat">
+            </picture>
+            <button aria-label="Кнопка на 1 слайд вправо">
+              <svg class="reviews__arrow">
+                <!-- спрайт стрелка вправо-->
+              </svg>
+            </button> 
+          </div>
+          <h3>Серёжа Попов</h3>
+          <p>Я выражаю огромную благодарность вашему питомнику. Мой Феликс невероятно умен
+          и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
+          <div class="reviews__item-footer">
+            <time datetime="2018-05-24">24 мая 2018</time>
+            <ul class="reviews__social">
+              <li>
+                <a href="#">
+                  <svg width="10" height="10">
+                    <!-- спрайт вк-->
+                  </svg>
+                </a> 
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="10" height="10">
+                    <!-- спрайт facebook-->
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <address>Новосибирск, Пушкинский проспект, 19</address>
+      <a class="main-footer__phone" href="tel:+73839006465">+7 (383) 900-64-65</a>
+      <ul class="main-footer__social">
+        <li>
+          <a href="#">
+            <svg class="main-footer__icon" width="10" height="10">
+              <!-- facebook-->
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="main-footer__icon" width="10" height="10">
+              <!-- vk-->
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="main-footer__icon" width="10" height="10">
+              <!-- twitter-->
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <svg class="main-footer__logo" width="10" height="10">
+          <!-- Разобраться(корона)-->
+      </svg>
+    </div>
+    <section class="call__reserve">
+      <button class="call__reserve-close">
+      </button>
+      <h2>Заказать звонок</h2>
+      <p>Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
+        <div class="call__reserve-list">
+          <ul>
+            <li class="call__reserve-name">
+              <label>
+                Как к вам обращаться?
+                <input type="text" name="name" placeholder="Введите имя">
+              </label>
+            </li>
+            <li>
+              <label>
+                Номер телефона
+                <input type="number" name="phone-number" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+              </label>
+            </li>
+          </ul>
+          <p class="call__reserve-condition">
+            Нажимая на кнопку "Заказать звонок", я даю
+          <a href="#">согласие на обработку персональных данных</a>
+          </p>
+          <button class="call__reserve-request" type="submit">
+            Заказать звонок
+          </button>
+        </div>
+    </section>
+  </footer>
 </html>
+
+<!-- 341 пересмотреть-->
