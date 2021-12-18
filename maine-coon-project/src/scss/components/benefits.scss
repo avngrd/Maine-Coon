@@ -1,3 +1,104 @@
 .benefits__wrapper{
   background-color: #151313;
+  padding-bottom: 30px;
+}
+
+.benefits{
+  min-height: 618px;
+}
+
+.benefits h2{
+  padding-top: 0px;
+  margin-top: -16px;
+
+  font-family: $yesevaone-font-tree;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.benefits p{
+  width: 428px;
+  margin: 0 auto;
+  margin-top: -10px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: $standart-color;
+  text-align: center;
+}
+
+.benefits__list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 1148px;
+  margin-left: 63px;
+  margin-top: 45px;
+
+  list-style-type: none;
+}
+
+.benefits__list a{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: inherit;
+  z-index: 2;
+}
+
+.benefits__list p{
+  display: block;
+  width: 233px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  z-index: 2;
+
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.benefits__list li{
+  padding: 0;
+  width: 360px;
+  min-height: 301px;
+
+  text-align: center;
+
+  background-color: #1F1C1D;
+}
+
+.benefits__list path{
+  fill: $standart-color;
+}
+
+.benefits__list svg{
+  margin: 0 auto;
+  margin-top: 66px;
+  z-index: 2;
+}
+
+.benefits__list a:hover path,
+.benefits__list a:focus path{
+  fill: white;
+}
+
+.benefits__list a:hover::before,
+.benefits__list a:focus::before{
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 267px;
+  top: 20px;
+  left: 21px;
+  z-index: 1;
+
+  background-color: $standart-color;
+}
+
+.benefits__list a:active::before{
+  background-color: rgba($color: $standart-color, $alpha: 0.7);
 }
