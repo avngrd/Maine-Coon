@@ -1,0 +1,149 @@
+.features__wrapper{
+  background-color: #1F1C1D;
+}
+
+.features{
+  position: relative;
+}
+
+.features h2{
+  margin-top: 0px;
+  padding-top: 85px;
+  margin-left: 25px;
+
+  font-family: $yesevaone-font-tree;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.features p {
+width: 745px;
+margin: 0 auto;
+padding-top: 19px;
+margin-top: -31px;
+margin-right: 265px;
+
+font-size: 16px;
+line-height: 26px;
+color: $standart-color;
+text-align: center;
+}
+
+.features img{
+  position: relative;
+  margin-left: 376px;
+  top: -61px;
+  z-index: 2;
+}
+
+.features::before{
+  content: "";
+  position: absolute;
+  top: 320px;
+  left: 440px;
+
+  border: 260px solid #151313;
+  border-radius: 50%;
+}
+
+.features::after{
+  content: "";
+  position: absolute;
+  width: 631px;
+  height: 631px;
+  top: 270px;
+  left: 385px;
+  z-index: 1;
+
+  border: 1px solid $standart-color;
+  border-radius: 50%;
+}
+
+.features__list{
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.features__item-1{
+  position: absolute;
+    width: 254px;
+    top: 406px;
+    left: 150px;
+
+    text-align: right;
+    line-height: 21.5px;
+    font-size: 14px;
+}
+
+.features__item-1::after{
+  content: "";
+    position: absolute;
+    top: 6px;
+    left: 275px;
+
+    border: 7.5px solid $standart-color;
+    border-radius: 50%;
+}
+
+.features__item-2{
+  position: absolute;
+    width: 202px;
+    top: 513px;
+    left: 1037px;
+
+    line-height: 24.5px;
+    font-size: 16px;
+}
+
+.features__item-2::after{
+  content: "";
+    position: absolute;
+    top: 6px;
+    left: -35px;
+
+    border: 7.5px solid $standart-color;
+    border-radius: 50%;
+}
+
+.features__item-3{
+  position: absolute;
+    width: 212px;
+    top: 692px;
+    left: 177px;
+
+    line-height: 22.7px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.features__item-3::after{
+  content: "";
+    position: absolute;
+    top: 6px;
+    right: -27px;
+
+    border: 7.5px solid $standart-color;
+    border-radius: 50%;
+}
+
+.features__item-4{
+  position: absolute;
+    width: 168px;
+    top: 736px;
+    left: 1000px;
+
+    line-height: 22.7px;
+    font-size: 16px;
+}
+.features__item-4::after{
+  content: "";
+    position: absolute;
+    top: 4px;
+    left: -33px;
+
+    border: 7.5px solid $standart-color;
+    border-radius: 50%;
+}

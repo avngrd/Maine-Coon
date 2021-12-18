@@ -1,0 +1,41 @@
+.typicall-button{
+  display: block;
+  line-height: 16px;
+  padding: 17px 10px;
+
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+
+  border: solid $standart-color 0.5px;
+}
+
+.typicall-button:hover,
+.typicall-button:focus{
+  background-color: $standart-color;
+}
+
+.typicall-button:active{
+  background-color: rgba($color: $standart-color, $alpha: 0.5);
+  border: solid rgba($color: $standart-color, $alpha: 0.1) 0.5px;
+}
+
+.typicall-link{
+  margin: 0;
+  padding: 0;
+
+  color: rgba($color: #FFFFFF, $alpha: 0.2);
+  font-size: 18px;
+
+  border: none;
+  background: none;
+}
+
+.typicall-link:focus,
+.typicall-link:hover{
+  color: rgba($color: #FFFFFF, $alpha: 1);
+}
+
+.typicall-link:active{
+  color: rgba($color: #FFFFFF, $alpha: 0.7);
+}
