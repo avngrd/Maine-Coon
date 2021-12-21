@@ -1,3 +1,95 @@
 .care{
+  min-height:645px ;
+
   background-image: url(../img/bg-cat.png);
+  background-size:cover;
+}
+
+
+.care h2{
+  margin: 0;
+  padding-top: 84px;
+
+  font-family: $yesevaone-font-tree;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.care__list{
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 46px;
+
+  list-style-type: none;
+}
+
+.care__list a{
+  display: flex;
+  justify-content: space-between;
+  width: 558.56px;
+  min-height: 166px;
+  margin-bottom: 42px;
+
+  border: 1px solid $standart-color;
+}
+
+
+.care__list .care__content{
+  width: 498.71px;
+}
+
+.care__list h3{
+  margin-top: 38px;
+  margin-left: 58px;
+  margin-bottom: 0;
+
+  font-size: 22px;
+  font-family: $robotobold-font-tree;
+  line-height: 25px;
+  color: $standart-color;
+}
+
+.care__list p{
+  display: block;
+  width: 402px;
+  margin-top: 9px;
+  margin-left: 55px;
+
+  font-size: 14px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.care__list .care__button{
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-top: -1px;
+  margin-right: -1px;
+  padding: 0;
+  width: 59px;
+  min-height: 100%;
+
+  background-color: $standart-color;
+  border-left: solid 1px $standart-color;
+}
+
+.care__list svg{
+  position: absolute;
+  top: 74.3px;
+  left: 27.64px;
+}
+
+.care__list a:hover .care__button,
+.care__list a:focus .care__button{
+  background: none;
+}
+
+.care__list a:active path{
+  stroke: rgba($color: white, $alpha: 0.5);
 }

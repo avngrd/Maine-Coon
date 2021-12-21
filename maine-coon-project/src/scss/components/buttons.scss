@@ -39,3 +39,21 @@
 .typicall-link:active{
   color: rgba($color: #FFFFFF, $alpha: 0.7);
 }
+
+.slider__button{
+  position: absolute;
+
+  border: none;
+  background: none;
+}
+
+.slider__button:hover path,
+.slider__button:focus path{
+  stroke: white;
+  stroke-opacity: 1.0;
+}
+
+.slider__button:active path{
+  stroke: white;
+  stroke-opacity: 0.5;
+}

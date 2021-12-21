@@ -1,3 +1,144 @@
 .team__wrapper{
+  position: relative;
   background-color: #151313;
+
+  min-height: 694px;
 }
+
+.team h2{
+  margin: 0;
+  padding-bottom: 0px;
+  padding-top: 82px;
+
+  font-family: $yesevaone-font-tree;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.team__description{
+  width: 520px;
+  margin: 0 auto;
+  margin-top: 22px;
+
+  font-size: 16px;
+  line-height: 24.5px;
+  color: $standart-color;
+  text-align: center;
+}
+
+.team-slider__button{
+  top: 403px;
+  z-index: 2;
+  left: 84px;
+}
+
+.team__slider__next-button{
+  top: 403px;
+  z-index: 2;
+  right: 84px;
+}
+
+.team__slider-list{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 0px;
+  z-index: 1;
+
+  list-style-type: none;
+}
+
+.team__slider-list .team-slider__left-side{
+  position: absolute;
+  top: -21px;
+  left: 185px;
+  z-index: 3;
+}
+
+.team__slider-list .team-slider__items{
+  display: flex;
+  margin-top: 45px;
+  margin-left: 525px;
+}
+
+.team__slider-list .team-slider__items::before{
+  content: "";
+  position: absolute;
+  width: 660px;
+  height: 402px;
+  top: -21px;
+  left: 497px;
+
+  border: 1px solid rgba($color: $standart-color, $alpha: 0.43);
+}
+
+.team__slider-list .team-slider__right-side{
+  width: 600px;
+  height: 356px;
+  padding-left: 95px;
+  padding-top: 69px;
+  z-index: 2;
+
+  background-color: #1F1C1D;
+}
+
+.team__slider-list p{
+  margin-bottom: 0px;
+  z-index: 2;
+}
+
+.team__slider-list .team-slider__name{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  z-index: 2;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: $standart-color;
+  line-height: 28px;
+}
+
+.team__slider-list .team-slider__work{
+  margin-top: -12px;
+  z-index: 2;
+
+  font-size: 16px;
+  line-height: 21.75px;
+  font-weight: 400;
+  color: $standart-color;
+}
+
+.team__slider-list .team-slider__slogan{
+  margin-top: 25px;
+  width: 404px;
+  z-index: 2;
+
+  line-height: 24.75px;
+  font-weight: 300;
+}
+
+.team__slider__social{
+  display: flex;
+  padding: 0;
+  margin-left: -12px;
+  margin-top: 45px;
+
+  list-style-type: none;
+}
+
+.team__slider__social li{
+  margin-left: 10px;
+  z-index: 2;
+}
+
+.team__slider__social svg:hover path,
+.team__slider__social svg:focus path{
+  fill: $standart-color;
+}
+
+.team__slider__social svg:active path{
+  fill: rgba($color: $standart-color, $alpha: 0.5);
+}
+
+

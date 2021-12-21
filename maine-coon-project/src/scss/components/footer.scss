@@ -1,3 +1,58 @@
 .main-footer__wrapper{
   background-color: #151313;
 }
+
+.main-footer{
+  display: flex;
+  padding-top: 168px;
+  min-height: 156px;
+}
+
+.main-footer__logo{
+  margin-top: -100px;
+  margin-left: 204px;
+}
+
+.main-footer__social{
+  margin-top: -90px;
+  margin-left: 84px;
+  display: flex;
+
+  list-style-type: none;
+}
+
+.main-footer__social li{
+  margin-right: 9px;
+}
+
+.main-footer__social li:hover path,
+.main-footer__social li:focus path{
+  fill: $standart-color;
+}
+
+.main-footer__social li:active path{
+  opacity: 0.5;
+}
+
+.footer__contacts{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin-top: 78px;
+}
+
+.footer__contacts a{
+  color: white;
+  font-size: 14px;
+}
+
+.footer__contacts .location{
+  margin-top: -171px;
+  margin-left: 143px;
+}
+
+.footer__contacts .phone__number{
+  margin-top: -170px;
+  margin-left: 68px;
+  font-weight: 700;
+}

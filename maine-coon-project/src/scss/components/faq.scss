@@ -1,0 +1,150 @@
+.faq {
+  min-height: 1150px;
+  background-color: #1F1C1D;
+}
+
+.faq h2{
+  margin:0;
+  padding-top: 73px;
+
+  font-family: $yesevaone-font-tree;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.faq__description {
+  width: 510px;
+  margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 50px;
+
+  font-size: 16px;
+  line-height: 24.5px;
+  color: $standart-color;
+  text-align: center;
+}
+
+.faq__list {
+  counter-reset: num;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.faq__list li::before{
+    content: counter(num);
+    position: absolute;
+    counter-increment: num;
+    top: 18px;
+    left: -80px;
+
+    color: $standart-color;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.faq__list li::after{
+    content: "0";
+    position: absolute;
+    top: 18px;
+    left: -120px;
+
+    color: $standart-color;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.faq__list li {
+  position: relative;
+  margin-left: 319px;
+  margin-bottom: 35px;
+  width: 793px;
+
+  border: 1px solid rgba($color: #A07B50, $alpha: 0.41);
+}
+
+.faq__question{
+  min-height: 111px;
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba($color: #A07B50, $alpha: 0.41)
+}
+
+.faq__question h3{
+  margin-top: 50px;
+  margin-left: 40px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #DDD0C3;
+}
+
+.faq__question button{
+  position: relative;
+  width: 104px;
+  min-height: 100%;
+}
+
+.faq__button_active{
+  background-color: $standart-color;
+  border: none;
+}
+
+.faq__button_unactive{
+  border: none;
+  background: none;
+  border-left: 1px solid rgba($color: #A07B50, $alpha: 0.41);
+}
+
+.faq__button_unactive::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  width: 18px;
+  height: 20px;
+
+  background-image: url("../img/plus.svg");
+}
+
+.faq__question button:hover{
+  background-color: rgba($color: $standart-color, $alpha: 0.5);
+}
+
+.faq__question .faq__button_active::before{
+  content: "";
+  position: absolute;
+  top: 59px;
+  left: 45px;
+  width: 16.5px;
+
+  border-top: 1px solid #fff;
+}
+
+.faq__question .faq__button_active::before{
+  border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+}
+
+.faq__answer{
+  padding-top: 12px;
+  padding-left: 40px;
+  padding-right: 200px;
+  padding-bottom: 37px;
+}
+
+.faq__answer p{
+  margin: 0;
+  margin-top: 26px;
+
+  color: #DDD0C3;
+  line-height: 24.64px;
+  font-weight: 300;
+}
+
+.faq__button{
+  width: 200px;
+  margin-top: 0px;
+  margin-left: 908px;
+}
